@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="TemplateWpfMVVM.Views.Pages.ShowImage"
+						 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+						 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+						 xmlns:local="clr-namespace:TemplateWpfMVVM.Views.Pages"
+						 mc:Ignorable="d"
+						 MaxHeight="100"
+						 MaxWidth="100"
+						 MinHeight="100"
+						 MinWidth="100"
+						 d:DesignWidth="100"
+						 d:DesignHeight="100"
+						 xmlns:vm="clr-namespace:TemplateWpfMVVM.ViewModels"
+						 xmlns:view="clr-namespace:TemplateWpfMVVM.Views.Pages"
+						 FontFamily="/Resources/Font#Roboto"
+						 d:DataContext="{d:DesignInstance vm:ShowImageViewModel, d:IsDesignTimeCreatable=True}">
+	<Grid>
+		<Image Source="/Resources/Images/bee-146810332.jpg" />
+	</Grid>
+</UserControl>

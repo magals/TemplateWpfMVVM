@@ -1,0 +1,22 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:TemplateWpfMVVM"
+				xmlns:vm="clr-namespace:TemplateWpfMVVM.ViewModels"
+				xmlns:view="clr-namespace:TemplateWpfMVVM.Views.Pages"
+				xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+				x:Class="TemplateWpfMVVM.Views.Windows.MainWindow"
+				mc:Ignorable="d"
+				Title="MainWindow"
+				Height="450"
+				Width="800"
+				FontFamily="/Resources/Font#Roboto"
+				DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
+	<Grid>
+		<Grid VerticalAlignment="Center"
+					HorizontalAlignment="Center">
+			<view:ShowImage DataContext="{Binding ShowImageViewModel}" />
+		</Grid>
+	</Grid>
+</Window>
